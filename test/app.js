@@ -16,6 +16,7 @@ describe('Injector', function() {
     }
 
     const driverModule = {
+      __exports__: ['driver'],
       __depends__: [personModule],
       driver: ['type', Driver]
     };
@@ -56,6 +57,8 @@ describe('Injector', function() {
 
     // use the injector API to retrieve components
     injector.get('car').start();
+
+    injector.get('driver').drive();
 
     // alternatively invoke a function, injecting the arguments
     injector.invoke(function(car) {
