@@ -9,7 +9,7 @@
             "args": [
                 "--timeout",
                 "999999",
-                "${workspaceFolder}/test/app.js"
+                "${workspaceFolder}/test/my-test.js"
             ],
             "internalConsoleOptions": "openOnSessionStart",
             "skipFiles": [
